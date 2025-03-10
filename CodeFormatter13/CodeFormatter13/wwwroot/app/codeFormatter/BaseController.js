@@ -16,7 +16,7 @@ class BaseController {
 debugger
         const lista = this.inputLista.value;
 
-        Repositorio.enviarDados({ lista })
+        Repositorio.formatarLista({ lista })
             .then(resultado => {
                 this.variaveisDaClasse.textContent = resultado.variaveisDaClasse;
                 this.comparacaoSubstring.textContent = resultado.comparacaoSubstring;
