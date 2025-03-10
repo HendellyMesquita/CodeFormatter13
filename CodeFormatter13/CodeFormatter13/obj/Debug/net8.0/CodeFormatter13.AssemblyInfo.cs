@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeFormatter13")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fddf7f4dc84f09b804e688de94523f745b06400")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec154b769e8404ffa7fa991c806cac6ffa043f02")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeFormatter13")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeFormatter13")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

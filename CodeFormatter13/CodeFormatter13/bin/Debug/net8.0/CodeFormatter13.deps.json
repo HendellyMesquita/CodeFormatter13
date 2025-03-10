@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CodeFormatter13/1.0.0": {
+        "runtime": {
+          "CodeFormatter13.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CodeFormatter13/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

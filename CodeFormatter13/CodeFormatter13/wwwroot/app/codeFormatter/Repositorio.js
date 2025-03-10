@@ -3,11 +3,10 @@
 class Repositorio {
     static async formatarLista(dados) {
         try {
-            const CaminhoController = "CodeFormatter";
             const RotaFormatar = "formatarLista";
-
-            const url = `http://localhost:3000/${CaminhoController}/${RotaFormatar}`;
-
+            const CaminhoController = "CodeFormatter";
+            const url = `/api/${CaminhoController}/${RotaFormatar}`;
+            debugger
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
@@ -15,15 +14,16 @@ class Repositorio {
                 },
                 body: JSON.stringify(dados)
             });
-
+    
             if (!response.ok) {
-                throw new Error(`Erro HTTP! Status: ${response.status}`);
+                throw new Error(`Erro HTTP! Código: ${response.status}`);
             }
-
-            const resultado = await response.json();
-            return resultado; // Retorna o resultado para quem chamar a função
+    
+            const data = await response.json();
+            console.log('Resposta do servidor:', data);
+            return data;
         } catch (error) {
-            console.error('Erro na requisição:', error);
+            console.error('Erro ao chamar a API:', error);
             return null;
         }
     }
