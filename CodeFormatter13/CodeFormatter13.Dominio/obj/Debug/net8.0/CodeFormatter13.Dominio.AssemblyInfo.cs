@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeFormatter13.Dominio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8c55dd745b67dac464e3cfa38c79ded33f1e12e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c82696147f362025d64a74c14300a4e359355ac7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeFormatter13.Dominio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeFormatter13.Dominio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

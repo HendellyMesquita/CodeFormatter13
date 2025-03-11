@@ -5,6 +5,10 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 {
     public class ServicoDeCodeFormatter : IServicoDeCodeFormatter
     {
+        private const string AlinhamentoLeft = "AlignMode.Left";
+        private const string CodigoCharZero = "ZeroChar";
+        private const string CodigoCharBranco = "CharBranco";
+
         public Task<(string VariavesClasse, string CodigoValidacaoClasse)> FormatarClasseInformada(string segmento)
         {
 
@@ -28,7 +32,7 @@ namespace CodeFormatter13.Dominio.CodeFormatter
             {
                 classeFormadada += $"var {item.Campo} = {item.PadChar};\n";
             }
-         
+
             return classeFormadada;
         }
 
@@ -49,26 +53,22 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 
         private List<CamposDeMapeamento> ObterBlocosDeCampos(string segmento)
         {
-            const string alinhamentoLeft = "AlignMode.Left";
-            const string CodigoCharZero = "ZeroChar";
-            const string CodigoCharBranco = "CharBranco";
+            
 
             var listaCampos = new List<CamposDeMapeamento>();
 
-            var padraoBloco = @"\[FieldFixedLength\((\d+)\)\].*?(\[FieldAlign\((.*?)\)\])?.*?public\s+\w+\s+(\w+)";
+            var padraoBloco = @"\[FieldFixedLength\((\d+)\)\].*?public\s+\w+\s+(\w+)";
 
             foreach (Match match in Regex.Matches(segmento, padraoBloco, RegexOptions.Singleline))
             {
-                var campo = char.ToLower(match.Groups[4].Value[0]) + match.Groups[4].Value.Substring(1);
-                var posicao = !string.IsNullOrEmpty(match.Groups[1].Value) 
-                    ? match.Groups[1].Value 
+                var campo = char.ToLower(match.Groups[2].Value[0]) + match.Groups[2].Value.Substring(1);
+                var posicao = !string.IsNullOrEmpty(match.Groups[1].Value)
+                    ? match.Groups[1].Value
                     : decimal.Zero.ToString();
 
-                var alinhamento = !string.IsNullOrEmpty(match.Groups[3].Value)
-                    ? match.Groups[3].Value.Split(',')[0] 
-                    : alinhamentoLeft;
-                
-                var padChar = alinhamento == alinhamentoLeft 
+                var alinhamento = ExtrairAlignMode(match.Value);
+
+                var padChar = alinhamento == AlinhamentoLeft
                                    ? $".PadRight({posicao}, {CodigoCharBranco})"
                                    : $".PadLeft({posicao}, {CodigoCharZero})";
 
@@ -85,5 +85,19 @@ namespace CodeFormatter13.Dominio.CodeFormatter
             return listaCampos;
         }
 
+
+        private string ExtrairAlignMode(string matchValue)
+        {
+            var padraoAlignMode = @"FieldAlign\((.*?)\)";
+
+            var alignModeMatch = Regex.Match(matchValue, padraoAlignMode);
+
+            if (alignModeMatch.Success)
+            {
+                return alignModeMatch.Groups[1].Value.Split(',')[0];
+            }
+
+            return AlinhamentoLeft;
+        }
     }
 }

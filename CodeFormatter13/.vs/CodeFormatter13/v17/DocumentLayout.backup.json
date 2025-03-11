@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{88C1B799-FC8E-4864-B38B-B43856FCAC45}|CodeFormatter13.Dominio\\CodeFormatter13.Dominio.csproj|solutionrelative:codeformatter13.dominio\\codeformatter\\camposdemapeamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07F229E4-82E1-4F32-8EB3-96DE5E8D94A5}|CodeFormatter13.UI\\CodeFormatter13.UI.csproj|c:\\users\\usuario\\documents\\projetospessoais\\codeformatter13\\codeformatter13\\codeformatter13.ui\\codeformatter13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{07F229E4-82E1-4F32-8EB3-96DE5E8D94A5}|CodeFormatter13.UI\\CodeFormatter13.UI.csproj|C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\codeformatter13.ui\\codeformatter13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{07F229E4-82E1-4F32-8EB3-96DE5E8D94A5}|CodeFormatter13.UI\\CodeFormatter13.UI.csproj|solutionrelative:codeformatter13.ui\\codeformatter13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -21,8 +21,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 125,
-          "SelectedChildIndex": 20,
+          "DockedWidth": 156,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,6 +35,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -127,34 +131,12 @@
               "Title": "ServicoDeCodeFormatter.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
               "RelativeDocumentMoniker": "CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs*",
-              "RelativeToolTip": "CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs*",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAUwDkAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
+              "RelativeToolTip": "CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwEgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T11:39:37.686Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 94,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         },
@@ -164,25 +146,7 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 2532,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:139:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }
