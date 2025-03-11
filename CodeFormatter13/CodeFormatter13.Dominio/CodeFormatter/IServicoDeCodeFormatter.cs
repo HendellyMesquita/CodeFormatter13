@@ -8,7 +8,6 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 {
     public interface IServicoDeCodeFormatter
     {
-        string ObterVariaveisDoSegmento(string segmento);
-        string ObterCodigoFormatadoParaComparacaoDeSubstring(string Segmento);
+        Task<(string VariavesClasse, string CodigoValidacaoClasse)> FormatarClasseInformada(string segmento);
     }
 }

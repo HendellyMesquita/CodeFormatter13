@@ -1,0 +1,13 @@
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\bin\Debug\net8.0\CodeFormatter13.Dominio.deps.json
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\bin\Debug\net8.0\CodeFormatter13.Dominio.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\bin\Debug\net8.0\CodeFormatter13.Dominio.pdb
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.AssemblyInfo.cs
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.sourcelink.json
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\refint\CodeFormatter13.Dominio.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.pdb
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\ref\CodeFormatter13.Dominio.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Dominio\obj\Debug\net8.0\CodeFormatter13.Dominio.csproj.AssemblyReference.cache

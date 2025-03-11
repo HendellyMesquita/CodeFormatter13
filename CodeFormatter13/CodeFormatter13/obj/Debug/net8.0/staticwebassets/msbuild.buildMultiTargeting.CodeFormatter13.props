@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\CodeFormatter13.props" />
-</Project>

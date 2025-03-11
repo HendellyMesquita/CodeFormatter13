@@ -1,0 +1,16 @@
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\bin\Debug\net8.0\CodeFormatter13.Infra.deps.json
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\bin\Debug\net8.0\CodeFormatter13.Infra.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\bin\Debug\net8.0\CodeFormatter13.Infra.pdb
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\bin\Debug\net8.0\CodeFormatter13.Dominio.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\bin\Debug\net8.0\CodeFormatter13.Dominio.pdb
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.AssemblyInfo.cs
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.sourcelink.json
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeForm.E0B028B9.Up2Date
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\refint\CodeFormatter13.Infra.dll
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\CodeFormatter13.Infra.pdb
+C:\Users\Usuario\Documents\ProjetosPessoais\CodeFormatter13\CodeFormatter13\CodeFormatter13.Infra\obj\Debug\net8.0\ref\CodeFormatter13.Infra.dll
