@@ -30,7 +30,7 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 
             foreach (var item in listaDeCampos)
             {
-                classeFormadada += $"var {item.Campo} = {item.PadChar};\n";
+                classeFormadada += $"var {item.Campo} = {item.ValorAtribuido}{item.PadChar};\n";
             }
 
             return classeFormadada;
@@ -57,11 +57,12 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 
             var listaCampos = new List<CamposDeMapeamento>();
 
-            var padraoBloco = @"\[FieldFixedLength\((\d+)\)\].*?public\s+\w+\s+(\w+)";
+            var padraoBloco = @"\[FieldFixedLength\((\d+)\)\].*?public\s+\w+\s+(\w+)(?:\s*=\s*([^;]+))?;";
 
             foreach (Match match in Regex.Matches(segmento, padraoBloco, RegexOptions.Singleline))
             {
                 var campo = char.ToLower(match.Groups[2].Value[0]) + match.Groups[2].Value.Substring(1);
+                var valorAtribuido = match.Groups[3].Success ? match.Groups[3].Value.Trim() : string.Empty;
                 var posicao = !string.IsNullOrEmpty(match.Groups[1].Value)
                     ? match.Groups[1].Value
                     : decimal.Zero.ToString();
@@ -75,6 +76,7 @@ namespace CodeFormatter13.Dominio.CodeFormatter
                 listaCampos.Add(new CamposDeMapeamento
                 {
                     Campo = campo,
+                    ValorAtribuido = valorAtribuido,
                     Posicao = int.Parse(posicao),
                     Alinhamento = alinhamento,
                     PadChar = padChar

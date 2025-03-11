@@ -62,15 +62,15 @@
             splitContainer1.Panel2.Controls.Add(label2);
             splitContainer1.Panel2.Controls.Add(rtbVariaveis);
             splitContainer1.Panel2.Controls.Add(rtbCodigoValidacao);
-            splitContainer1.Size = new Size(993, 580);
-            splitContainer1.SplitterDistance = 492;
+            splitContainer1.Size = new Size(1213, 662);
+            splitContainer1.SplitterDistance = 599;
             splitContainer1.TabIndex = 0;
             // 
             // splitter1
             // 
             splitter1.Location = new Point(0, 0);
             splitter1.Name = "splitter1";
-            splitter1.Size = new Size(3, 580);
+            splitter1.Size = new Size(3, 662);
             splitter1.TabIndex = 12;
             splitter1.TabStop = false;
             // 
@@ -79,7 +79,7 @@
             rtbLista.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             rtbLista.Location = new Point(12, 33);
             rtbLista.Name = "rtbLista";
-            rtbLista.Size = new Size(477, 540);
+            rtbLista.Size = new Size(584, 617);
             rtbLista.TabIndex = 7;
             rtbLista.Text = "";
             // 
@@ -95,7 +95,7 @@
             // btnFormater
             // 
             btnFormater.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnFormater.Location = new Point(414, 7);
+            btnFormater.Location = new Point(521, 7);
             btnFormater.Name = "btnFormater";
             btnFormater.Size = new Size(75, 23);
             btnFormater.TabIndex = 10;
@@ -107,7 +107,7 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Location = new Point(3, 294);
+            label3.Location = new Point(6, 336);
             label3.Name = "label3";
             label3.Size = new Size(136, 15);
             label3.TabIndex = 13;
@@ -117,7 +117,7 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Location = new Point(3, 15);
+            label2.Location = new Point(6, 15);
             label2.Name = "label2";
             label2.Size = new Size(115, 15);
             label2.TabIndex = 12;
@@ -128,16 +128,16 @@
             rtbVariaveis.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             rtbVariaveis.Location = new Point(3, 33);
             rtbVariaveis.Name = "rtbVariaveis";
-            rtbVariaveis.Size = new Size(482, 252);
+            rtbVariaveis.Size = new Size(595, 295);
             rtbVariaveis.TabIndex = 9;
             rtbVariaveis.Text = "";
             // 
             // rtbCodigoValidacao
             // 
             rtbCodigoValidacao.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            rtbCodigoValidacao.Location = new Point(3, 312);
+            rtbCodigoValidacao.Location = new Point(3, 355);
             rtbCodigoValidacao.Name = "rtbCodigoValidacao";
-            rtbCodigoValidacao.Size = new Size(482, 252);
+            rtbCodigoValidacao.Size = new Size(595, 295);
             rtbCodigoValidacao.TabIndex = 8;
             rtbCodigoValidacao.Text = "";
             // 
@@ -146,10 +146,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CausesValidation = false;
-            ClientSize = new Size(993, 580);
+            ClientSize = new Size(1213, 662);
             Controls.Add(splitContainer1);
             MaximizeBox = false;
             Name = "CodeFormatter13";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Coder Formatter 13";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
