@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CodeFormatter13));
             splitContainer1 = new SplitContainer();
             splitter1 = new Splitter();
             rtbLista = new RichTextBox();
@@ -177,6 +178,7 @@
             CausesValidation = false;
             ClientSize = new Size(1213, 954);
             Controls.Add(splitContainer1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "CodeFormatter13";
             StartPosition = FormStartPosition.CenterScreen;

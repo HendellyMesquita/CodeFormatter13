@@ -11,27 +11,31 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 
         public Task<(string VariavesClasse, string CodigoValidacaoClasse, string VariaveisRetorno)> FormatarClasseInformada(string segmento)
         {
-
-
-
-            var variavesRemessa = string.Empty;
-            var validadorClasse = string.Empty;
-            var variavesRetorno = string.Empty;
-
-            var listaDeCampos = ObterBlocosDeCampos(segmento);
-
-            foreach (var linhaMap in listaDeCampos)
+            try
             {
-                variavesRemessa = ObterVariaveisComBaseNoSegmento(segmento, variavesRemessa, linhaMap);
-                variavesRetorno = ObterVariaveisComBaseNoSegmentoParaRetonto(segmento, variavesRetorno, linhaMap);
-                validadorClasse = ObterCodigoDeValidacaoComBaseNoSegmento(segmento, validadorClasse, linhaMap);
-                posicaoAtual += linhaMap.Posicao;
+                var variavesRemessa = string.Empty;
+                var validadorClasse = string.Empty;
+                var variavesRetorno = string.Empty;
 
+                var listaDeCampos = ObterBlocosDeCampos(segmento);
+
+                foreach (var linhaMap in listaDeCampos)
+                {
+                    variavesRemessa = ObterVariaveisComBaseNoSegmento(segmento, variavesRemessa, linhaMap);
+                    variavesRetorno = ObterVariaveisComBaseNoSegmentoParaRetonto(segmento, variavesRetorno, linhaMap);
+                    validadorClasse = ObterCodigoDeValidacaoComBaseNoSegmento(segmento, validadorClasse, linhaMap);
+                    posicaoAtual += linhaMap.Posicao;
+
+                }
+
+                return Task
+                   .FromResult(new ValueTuple<string, string, string>(variavesRemessa,
+                   validadorClasse, variavesRetorno));
             }
-
-            return Task
-               .FromResult(new ValueTuple<string, string, string>(variavesRemessa,
-               validadorClasse, variavesRetorno));
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
         }
 
         private string ObterVariaveisComBaseNoSegmento(string segmento, string variavesRemessa, CamposDeMapeamento linhaMap)
