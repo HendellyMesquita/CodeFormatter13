@@ -7,7 +7,7 @@ namespace CodeFormatter13.Dominio.CodeFormatter
         private const string AlinhamentoLeft = "AlignMode.Left";
         private const string CodigoCharZero = "ZeroChar";
         private const string CodigoCharBranco = "CharBranco";
-        private int posicaoAtual = 0;
+        private int posicaoAtual = default;
 
         public Task<(string VariavesClasse, string CodigoValidacaoClasse, string VariaveisRetorno)> FormatarClasseInformada(string segmento)
         {
@@ -27,6 +27,7 @@ namespace CodeFormatter13.Dominio.CodeFormatter
                     posicaoAtual += linhaMap.Posicao;
 
                 }
+                posicaoAtual = default;
 
                 return Task
                    .FromResult(new ValueTuple<string, string, string>(variavesRemessa,
