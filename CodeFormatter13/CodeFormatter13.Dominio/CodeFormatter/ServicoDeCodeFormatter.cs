@@ -7,68 +7,57 @@ namespace CodeFormatter13.Dominio.CodeFormatter
         private const string AlinhamentoLeft = "AlignMode.Left";
         private const string CodigoCharZero = "ZeroChar";
         private const string CodigoCharBranco = "CharBranco";
+        private int posicaoAtual = 0;
 
         public Task<(string VariavesClasse, string CodigoValidacaoClasse, string VariaveisRetorno)> FormatarClasseInformada(string segmento)
         {
 
 
-            var variavesClasse = ObterVariaveisComBaseNoSegmento(segmento);
-            var codigoValidacaoClasse = ObterCodigoDeValidacaoComBaseNoSegmento(segmento);
-            var variavesRetorno = ObterVariaveisComBaseNoSegmentoParaRetonto(segmento);
+
+            var variavesRemessa = string.Empty;
+            var validadorClasse = string.Empty;
+            var variavesRetorno = string.Empty;
+
+            var listaDeCampos = ObterBlocosDeCampos(segmento);
+
+            foreach (var linhaMap in listaDeCampos)
+            {
+                variavesRemessa = ObterVariaveisComBaseNoSegmento(segmento, variavesRemessa, linhaMap);
+                variavesRetorno = ObterVariaveisComBaseNoSegmentoParaRetonto(segmento, variavesRetorno, linhaMap);
+                validadorClasse = ObterCodigoDeValidacaoComBaseNoSegmento(segmento, validadorClasse, linhaMap);
+                posicaoAtual += linhaMap.Posicao;
+
+            }
 
             return Task
-               .FromResult(new ValueTuple<string, string, string>(variavesClasse,
-               codigoValidacaoClasse, variavesRetorno));
+               .FromResult(new ValueTuple<string, string, string>(variavesRemessa,
+               validadorClasse, variavesRetorno));
+        }
+
+        private string ObterVariaveisComBaseNoSegmento(string segmento, string variavesRemessa, CamposDeMapeamento linhaMap)
+        {
+
+            return variavesRemessa += $"var {linhaMap.Campo} = {linhaMap.ValorAtribuido}{linhaMap.PadChar};\n";
 
         }
 
-        private string ObterVariaveisComBaseNoSegmento(string segmento)
+        private string ObterVariaveisComBaseNoSegmentoParaRetonto(string segmento, string variavesRetorno, CamposDeMapeamento linhaMap)
         {
-            var classeFormadada = string.Empty;
-            var listaDeCampos = ObterBlocosDeCampos(segmento);
 
+            return variavesRetorno += $"var {linhaMap.Campo} = registroSegmento.Conteudo.Substring({posicaoAtual}, {linhaMap.Posicao});\n";
 
-            foreach (var item in listaDeCampos)
-            {
-                classeFormadada += $"var {item.Campo} = {item.ValorAtribuido}{item.PadChar};\n";
-            }
-
-            return classeFormadada;
-        }
-        
-        private string ObterVariaveisComBaseNoSegmentoParaRetonto(string segmento)
-        {
-            var classeFormadada = string.Empty;
-            var listaDeCampos = ObterBlocosDeCampos(segmento);
-            var index = 0;
-
-            foreach (var item in listaDeCampos)
-            {
-                classeFormadada += $"var {item.Campo} = segmento.Conteudo.Substring({index}, {item.Posicao}));\n";
-                index += item.Posicao;
-            }
-
-            return classeFormadada;
         }
 
-        private string ObterCodigoDeValidacaoComBaseNoSegmento(string segmento)
+        private string ObterCodigoDeValidacaoComBaseNoSegmento(string segmento, string validadorClasse, CamposDeMapeamento linhaMap)
         {
-            var validacaoFormatado = string.Empty;
-            var listaDeCampos = ObterBlocosDeCampos(segmento);
-            var index = 0;
 
-            foreach (var item in listaDeCampos)
-            {
-                validacaoFormatado += $"Assert.Equal({item.Campo}, linhaArquivo.Substring({index}, {item.Posicao}));\n";
-                index += item.Posicao;
-            }
+            return validadorClasse += $"Assert.Equal({linhaMap.Campo}, linhaArquivo.Substring({posicaoAtual}, {linhaMap.Posicao}));\n";
 
-            return validacaoFormatado;
         }
 
         private List<CamposDeMapeamento> ObterBlocosDeCampos(string segmento)
         {
-            
+
 
             var listaCampos = new List<CamposDeMapeamento>();
 

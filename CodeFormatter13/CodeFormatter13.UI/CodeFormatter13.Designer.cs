@@ -81,7 +81,7 @@
             // rtbLista
             // 
             rtbLista.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            rtbLista.Location = new Point(9, 31);
+            rtbLista.Location = new Point(9, 28);
             rtbLista.Name = "rtbLista";
             rtbLista.Size = new Size(584, 911);
             rtbLista.TabIndex = 7;
@@ -90,16 +90,18 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold | FontStyle.Italic);
             label1.Location = new Point(12, 10);
             label1.Name = "label1";
-            label1.Size = new Size(111, 15);
+            label1.Size = new Size(127, 18);
             label1.TabIndex = 11;
             label1.Text = "Cole sua lista aqui...";
             // 
             // btnFormater
             // 
             btnFormater.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnFormater.Location = new Point(518, 6);
+            btnFormater.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnFormater.Location = new Point(518, 5);
             btnFormater.Name = "btnFormater";
             btnFormater.Size = new Size(75, 23);
             btnFormater.TabIndex = 10;
@@ -111,9 +113,10 @@
             // 
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
+            label4.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold | FontStyle.Italic);
             label4.Location = new Point(5, 632);
             label4.Name = "label4";
-            label4.Size = new Size(186, 15);
+            label4.Size = new Size(214, 18);
             label4.TabIndex = 19;
             label4.Text = "Variaveis Formatada para Retorno:";
             // 
@@ -130,9 +133,10 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
+            label3.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold | FontStyle.Italic);
             label3.Location = new Point(5, 321);
             label3.Name = "label3";
-            label3.Size = new Size(136, 15);
+            label3.Size = new Size(139, 18);
             label3.TabIndex = 17;
             label3.Text = "Codigo de Comparação:";
             // 
@@ -140,9 +144,10 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
+            label2.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold | FontStyle.Italic);
             label2.Location = new Point(5, 10);
             label2.Name = "label2";
-            label2.Size = new Size(115, 15);
+            label2.Size = new Size(133, 18);
             label2.TabIndex = 16;
             label2.Text = "Variaveis Formatada:";
             // 
@@ -168,6 +173,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             CausesValidation = false;
             ClientSize = new Size(1213, 954);
             Controls.Add(splitContainer1);

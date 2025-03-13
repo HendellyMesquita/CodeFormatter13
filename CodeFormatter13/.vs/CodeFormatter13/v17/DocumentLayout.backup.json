@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88C1B799-FC8E-4864-B38B-B43856FCAC45}|CodeFormatter13.Dominio\\CodeFormatter13.Dominio.csproj|c:\\users\\usuario\\documents\\projetospessoais\\codeformatter13\\codeformatter13\\codeformatter13.dominio\\codeformatter\\servicodecodeformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88C1B799-FC8E-4864-B38B-B43856FCAC45}|CodeFormatter13.Dominio\\CodeFormatter13.Dominio.csproj|solutionrelative:codeformatter13.dominio\\codeformatter\\servicodecodeformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07F229E4-82E1-4F32-8EB3-96DE5E8D94A5}|CodeFormatter13.UI\\CodeFormatter13.UI.csproj|c:\\users\\usuario\\documents\\projetospessoais\\codeformatter13\\codeformatter13\\codeformatter13.ui\\codeformatter13.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07F229E4-82E1-4F32-8EB3-96DE5E8D94A5}|CodeFormatter13.UI\\CodeFormatter13.UI.csproj|solutionrelative:codeformatter13.ui\\codeformatter13.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C1B799-FC8E-4864-B38B-B43856FCAC45}|CodeFormatter13.Dominio\\CodeFormatter13.Dominio.csproj|c:\\users\\usuario\\documents\\projetospessoais\\codeformatter13\\codeformatter13\\codeformatter13.dominio\\codeformatter\\servicodecodeformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C1B799-FC8E-4864-B38B-B43856FCAC45}|CodeFormatter13.Dominio\\CodeFormatter13.Dominio.csproj|solutionrelative:codeformatter13.dominio\\codeformatter\\servicodecodeformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88C1B799-FC8E-4864-B38B-B43856FCAC45}|CodeFormatter13.Dominio\\CodeFormatter13.Dominio.csproj|c:\\users\\usuario\\documents\\projetospessoais\\codeformatter13\\codeformatter13\\codeformatter13.dominio\\codeformatter\\iservicodecodeformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 302,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,31 +106,30 @@
               "RelativeToolTip": "CodeFormatter13.Dominio\\CodeFormatter\\IServicoDeCodeFormatter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:10:03.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T15:10:03.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CodeFormatter13.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.UI\\CodeFormatter13.Designer.cs",
               "RelativeDocumentMoniker": "CodeFormatter13.UI\\CodeFormatter13.Designer.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.UI\\CodeFormatter13.Designer.cs",
               "RelativeToolTip": "CodeFormatter13.UI\\CodeFormatter13.Designer.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAowK0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T20:56:29.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ServicoDeCodeFormatter.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
               "RelativeDocumentMoniker": "CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
               "RelativeToolTip": "CodeFormatter13.Dominio\\CodeFormatter\\ServicoDeCodeFormatter.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAowE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T11:39:37.686Z",
               "EditorCaption": ""

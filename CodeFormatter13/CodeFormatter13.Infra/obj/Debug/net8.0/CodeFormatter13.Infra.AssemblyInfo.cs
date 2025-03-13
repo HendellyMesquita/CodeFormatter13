@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeFormatter13.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec24e2284290f1cb03a1696c39d3feb0d5ae79ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b7da19f3db07683b505bb6a54e8ef10508e854d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeFormatter13.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeFormatter13.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
