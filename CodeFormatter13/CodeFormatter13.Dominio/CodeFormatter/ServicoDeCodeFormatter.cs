@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace CodeFormatter13.Dominio.CodeFormatter
 {
@@ -9,16 +8,17 @@ namespace CodeFormatter13.Dominio.CodeFormatter
         private const string CodigoCharZero = "ZeroChar";
         private const string CodigoCharBranco = "CharBranco";
 
-        public Task<(string VariavesClasse, string CodigoValidacaoClasse)> FormatarClasseInformada(string segmento)
+        public Task<(string VariavesClasse, string CodigoValidacaoClasse, string VariaveisRetorno)> FormatarClasseInformada(string segmento)
         {
 
 
             var variavesClasse = ObterVariaveisComBaseNoSegmento(segmento);
             var codigoValidacaoClasse = ObterCodigoDeValidacaoComBaseNoSegmento(segmento);
+            var variavesRetorno = ObterVariaveisComBaseNoSegmentoParaRetonto(segmento);
 
             return Task
-               .FromResult(new ValueTuple<string, string>(variavesClasse,
-               codigoValidacaoClasse));
+               .FromResult(new ValueTuple<string, string, string>(variavesClasse,
+               codigoValidacaoClasse, variavesRetorno));
 
         }
 
@@ -35,13 +35,28 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 
             return classeFormadada;
         }
+        
+        private string ObterVariaveisComBaseNoSegmentoParaRetonto(string segmento)
+        {
+            var classeFormadada = string.Empty;
+            var listaDeCampos = ObterBlocosDeCampos(segmento);
+            var index = 0;
+
+            foreach (var item in listaDeCampos)
+            {
+                classeFormadada += $"var {item.Campo} = segmento.Conteudo.Substring({index}, {item.Posicao}));\n";
+                index += item.Posicao;
+            }
+
+            return classeFormadada;
+        }
 
         private string ObterCodigoDeValidacaoComBaseNoSegmento(string segmento)
         {
             var validacaoFormatado = string.Empty;
             var listaDeCampos = ObterBlocosDeCampos(segmento);
+            var index = 0;
 
-            int index = 0;
             foreach (var item in listaDeCampos)
             {
                 validacaoFormatado += $"Assert.Equal({item.Campo}, linhaArquivo.Substring({index}, {item.Posicao}));\n";

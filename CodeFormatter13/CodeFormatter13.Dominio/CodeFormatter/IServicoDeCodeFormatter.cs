@@ -8,6 +8,6 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 {
     public interface IServicoDeCodeFormatter
     {
-        Task<(string VariavesClasse, string CodigoValidacaoClasse)> FormatarClasseInformada(string segmento);
+        Task<(string VariavesClasse, string CodigoValidacaoClasse, string VariaveisRetorno)> FormatarClasseInformada(string segmento);
     }
 }

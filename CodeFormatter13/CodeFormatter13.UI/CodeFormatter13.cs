@@ -24,6 +24,7 @@ namespace CodeFormatter13.UI
 
             rtbVariaveis.Text = formatado.Result.VariavesClasse;
             rtbCodigoValidacao.Text = formatado.Result.CodigoValidacaoClasse;
+            rtbVariaveisRetorno.Text = formatado.Result.VariaveisRetorno;
 
         }
 
