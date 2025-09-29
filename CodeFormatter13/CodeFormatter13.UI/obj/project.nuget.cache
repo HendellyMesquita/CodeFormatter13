@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PW5I+OPBbrE=",
+  "dgSpecHash": "1In77cdhw6A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\ProjetosPessoais\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.UI\\CodeFormatter13.UI.csproj",
+  "projectFilePath": "D:\\Documentos\\Projetos\\Pessoal\\CodeFormatter13\\CodeFormatter13\\CodeFormatter13.UI\\CodeFormatter13.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

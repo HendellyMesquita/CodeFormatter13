@@ -66,7 +66,7 @@ namespace CodeFormatter13.Dominio.CodeFormatter
 
             var listaCampos = new List<CamposDeMapeamento>();
 
-            var padraoBloco = @"\[FieldFixedLength\((\d+)\)\].*?public\s+\w+\s+(\w+)(?:\s*=\s*([^;]+))?;";
+            var padraoBloco = @"\[FieldFixedLength\((\d+)\)\].*?public\s+\w+\??\s+(\w+)(?:\s*=\s*([^;]+))?;";
 
             foreach (Match match in Regex.Matches(segmento, padraoBloco, RegexOptions.Singleline))
             {
